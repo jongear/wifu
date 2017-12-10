@@ -1,0 +1,41 @@
+language: python
+python:
+ - "2.7"
+cache:
+  pip: true
+  directories:
+    - node_modules
+
+sudo: required
+
+notifications:
+  email: true
+
+install:
+  - npm install -g @angular/cli
+  - npm install
+  - npm install typescript@'>=2.4.2 <2.5.0'
+  - pip install awscli
+
+script:
+  - ng build --prod
+
+deploy:
+  - provider: s3
+    edge: true
+    skip_cleanup: true
+    local_dir: dist
+    access_key_id: $AWS_ACCESS_KEY_ID
+    secret_access_key: 
+      secure: "$AWS_SECRET_ACCESS_KEY"
+    bucket: $AWS_BUCKET
+    on:
+      branch: master
+
+after_deploy:
+  - echo "done deploying"
+
+  # Allow `awscli` to make requests to CloudFront.
+  - aws configure set preview.cloudfront true
+  # Invalidate every object in the targeted distribution.
+  - aws cloudfront create-invalidation --distribution-id $AWS_CLOUDFRONT_DISTRIBUTION_ID \--paths /index.html /error.html /build.js /assets/*
