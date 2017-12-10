@@ -24,6 +24,6 @@ export class StateModel implements d3.SimulationNodeDatum {
   }
 
   get color() {
-    return d3.interpolate('#ffffcc', '#800026')(this.total / 100000);
+    return d3.interpolate('#ffffcc', '#800026')(this.total / 1000000);
   }
 }
