@@ -117,6 +117,13 @@ export class NetNeutralityComponent implements OnInit {
                 new RepresentativeModel({ name: 'Tipton, Scott', party: 'Republican', district: '3rd', total: 23500 })
             ]
         }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'Connecticut',
+            stateCode: 'CT',
+            senators: [ ],
+            representatives: [ ]
+        }));
     }
 
     generateState(states, stateTooltip) {
