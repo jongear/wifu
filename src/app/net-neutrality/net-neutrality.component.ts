@@ -25,7 +25,7 @@ export class NetNeutralityComponent implements OnInit {
     hydrateMap() {
         const states = this.usMap.states;
 
-        let stateTooltip = new StateTooltipModel({
+        this.generateState(states, new StateTooltipModel({
             stateName: 'Alaska',
             stateCode: 'AK',
             senators: [
@@ -35,10 +35,9 @@ export class NetNeutralityComponent implements OnInit {
             representatives: [
                 new RepresentativeModel({ name: 'Young, Don', party: 'Republican', district: '1st', total: 28650 }),
             ]
-        });
-        this.generateState(states, stateTooltip);
+        }));
 
-        stateTooltip = new StateTooltipModel({
+        this.generateState(states, new StateTooltipModel({
             stateName: 'Alabama',
             stateCode: 'AL',
             senators: [
@@ -52,8 +51,59 @@ export class NetNeutralityComponent implements OnInit {
                 new RepresentativeModel({ name: 'Roby, Martha', party: 'Republican', district: '2nd', total: 332000 }),
                 new RepresentativeModel({ name: 'Rogers, Mike', party: 'Republican', district: '3rd', total: 25000 })
             ]
-        });
-        this.generateState(states, stateTooltip);
+        }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'Arkansas',
+            stateCode: 'AR',
+            senators: [
+                new SenatorModel({ name: 'Boozman, John', party: 'Republican', total: 56450 }),
+                new SenatorModel({ name: 'Cotton, Tom', party: 'Republican', total: 70025 })
+            ],
+            representatives: [
+                new RepresentativeModel({ name: 'Crawford, Eric', party: 'Republican', district: '1st', total: 9000 }),
+                new RepresentativeModel({ name: 'Griffith, Tim', party: 'Republican', district: '2nd', total: 16915 }),
+                new RepresentativeModel({ name: 'Westerman, Bruce', party: 'Republican', district: '4th', total: 11000 }),
+                new RepresentativeModel({ name: 'Womack, Steve', party: 'Republican', district: '3rd', total: 15500 })
+            ]
+        }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'Arizona',
+            stateCode: 'AZ',
+            senators: [
+                new SenatorModel({ name: 'Flake, Jeff', party: 'Republican', total: 27955 }),
+                new SenatorModel({ name: 'McCain, John', party: 'Republican', total: 84125 })
+            ],
+            representatives: [
+                new RepresentativeModel({ name: 'Biggs, Andy', party: 'Republican', district: '5th', total: 5000 }),
+                new RepresentativeModel({ name: 'Franks, Trent', party: 'Republican', district: '8th', total: 16500 }),
+                new RepresentativeModel({ name: 'Gosar, Paul', party: 'Republican', district: '4th', total: 2000 }),
+                new RepresentativeModel({ name: 'McSally, Martha', party: 'Republican', district: '2nd', total: 40500 }),
+                new RepresentativeModel({ name: 'Schweikert, David', party: 'Republican', district: '6th', total: 4000 })
+            ]
+        }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'California',
+            stateCode: 'CA',
+            senators: [
+            ],
+            representatives: [
+                new RepresentativeModel({ name: 'Cook, Paul', party: 'Republican', district: '8th', total: 15000 }),
+                new RepresentativeModel({ name: 'Denham, Jeffrey', party: 'Republican', district: '10th', total: 47000 }),
+                new RepresentativeModel({ name: 'Hunter, Duncan', party: 'Republican', district: '50th', total: 19000 }),
+                new RepresentativeModel({ name: 'Issa, Darrell', party: 'Republican', district: '49th', total: 66275 }),
+                new RepresentativeModel({ name: 'Knight, Steve', party: 'Republican', district: '25th', total: 32500 }),
+                new RepresentativeModel({ name: 'LaMalfa, Doug', party: 'Republican', district: '1st', total: 5000 }),
+                new RepresentativeModel({ name: 'McCarthy, Kevin', party: 'Republican', district: '23rd', total: 99100 }),
+                new RepresentativeModel({ name: 'Nunes, Devin', party: 'Republican', district: '22nd', total: 37750 }),
+                new RepresentativeModel({ name: 'Rohrabacher, Dana', party: 'Republican', district: '48th', total: 1350 }),
+                new RepresentativeModel({ name: 'Royce, Edward', party: 'Republican', district: '39th', total: 14000 }),
+                new RepresentativeModel({ name: 'Valadao, David', party: 'Republican', district: '21st', total: 37400 }),
+                new RepresentativeModel({ name: 'Walters, Mimi', party: 'Republican', district: '45th', total: 47450 }),
+            ]
+        }));
     }
 
     generateState(states, stateTooltip) {
