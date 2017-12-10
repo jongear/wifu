@@ -104,6 +104,19 @@ export class NetNeutralityComponent implements OnInit {
                 new RepresentativeModel({ name: 'Walters, Mimi', party: 'Republican', district: '45th', total: 47450 }),
             ]
         }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'Colarado',
+            stateCode: 'CO',
+            senators: [
+                new SenatorModel({ name: 'Gardner, Cory', party: 'Republican', total: 95023 })
+            ],
+            representatives: [
+                new RepresentativeModel({ name: 'Buck, Ken', party: 'Republican', district: '4th', total: 15750 }),
+                new RepresentativeModel({ name: 'Lamborn, Doug', party: 'Republican', district: '5th', total: 28400 }),
+                new RepresentativeModel({ name: 'Tipton, Scott', party: 'Republican', district: '3rd', total: 23500 })
+            ]
+        }));
     }
 
     generateState(states, stateTooltip) {
