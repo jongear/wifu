@@ -5,8 +5,10 @@ export class StateTooltipModel {
     senators: SenatorModel[];
     representatives: RepresentativeModel[];
     stateName: string;
-
-    constructor() {
+    stateCode: string;
+    
+    public constructor(init?: Partial<StateTooltipModel>) {
+        Object.assign(this, init);
     }
 
     generate() {
