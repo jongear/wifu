@@ -1,10 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
 import { AppComponent } from './app.component';
 import { NetNeutralityComponent } from './net-neutrality/net-neutrality.component';
-
+import { D3Module } from './d3/d3.module';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -14,7 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule
+        AppRoutingModule,
+        D3Module
     ],
     providers: [],
     bootstrap: [AppComponent]

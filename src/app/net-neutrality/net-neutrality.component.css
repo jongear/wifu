@@ -6,7 +6,7 @@
 .state:hover{
     fill-opacity:0.5;
 }
-#statesvg-tooltip {   
+.statesvg-tooltip {   
     position: absolute;           
     text-align: center;
     padding: 20px;             
@@ -17,11 +17,11 @@
     border-radius: 2px;           
     pointer-events: none;         
 }
-#statesvg-tooltip h4{
+.statesvg-tooltip h4{
     margin:0;
     font-size:14px;
 }
-#statesvg-tooltip{
+.statesvg-tooltip{
     background:rgba(0,0,0,0.9);
     border:1px solid grey;
     border-radius:5px;
@@ -31,16 +31,16 @@
     color:white;
     opacity:0;
 }
-#statesvg-tooltip table{
+.statesvg-tooltip table{
     table-layout:fixed;
 }
-#statesvg-tooltip tr td{
+.statesvg-tooltip tr td{
     padding:0;
     margin:0;
 }
-#statesvg-tooltip tr td:nth-child(1){
+.statesvg-tooltip tr td:nth-child(1){
     width:50px;
 }
-#statesvg-tooltip tr td:nth-child(2){
+.statesvg-tooltip tr td:nth-child(2){
     text-align:center;
 }
