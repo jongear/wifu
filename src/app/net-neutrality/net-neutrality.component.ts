@@ -124,6 +124,38 @@ export class NetNeutralityComponent implements OnInit {
             senators: [ ],
             representatives: [ ]
         }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'Delaware',
+            stateCode: 'DE',
+            senators: [ ],
+            representatives: [ ]
+        }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'Florida',
+            stateCode: 'FL',
+            senators: [
+                new SenatorModel({ name: 'Rubio, Marco', party: 'Republican', total: 75535 })
+            ],
+            representatives: [
+                new RepresentativeModel({ name: 'Bilirakis, Gus', party: 'Republican', district: '12th', total: 55000 }),
+                new RepresentativeModel({ name: 'Buchanan, Vern', party: 'Republican', district: '16th', total: 18900 }),
+                new RepresentativeModel({ name: 'Curbelo, Carlos', party: 'Republican', district: '26th', total: 45700 }),
+                new RepresentativeModel({ name: 'DeSantis, Ron', party: 'Republican', district: '6th', total: 21634 }),
+                new RepresentativeModel({ name: 'Diaz-Balart, Mario', party: 'Republican', district: '25th', total: 26500 }),
+                new RepresentativeModel({ name: 'Dunn, Neal', party: 'Republican', district: '2nd', total: 13750 }),
+                new RepresentativeModel({ name: 'Gaetz, Matt', party: 'Republican', district: '1st', total: 7000 }),
+                new RepresentativeModel({ name: 'Mast, Brian', party: 'Republican', district: '18th', total: 10500 }),
+                new RepresentativeModel({ name: 'Posey, Bill', party: 'Republican', district: '8th', total: 3000 }),
+                new RepresentativeModel({ name: 'Rooney, Laurence', party: 'Republican', district: '19th', total: 16625 }),
+                new RepresentativeModel({ name: 'Rooney, Tom', party: 'Republican', district: '17th', total: 19000 }),
+                new RepresentativeModel({ name: 'Ross, Dennis', party: 'Republican', district: '15th', total: 17000 }),
+                new RepresentativeModel({ name: 'Rutherford, John', party: 'Republican', district: '4th', total: 6000 }),
+                new RepresentativeModel({ name: 'Webster, Daniel', party: 'Republican', district: '11th', total: 2500 }),
+                new RepresentativeModel({ name: 'Yoho, Ted', party: 'Republican', district: '3rd', total: 4000 })
+            ]
+        }));
     }
 
     generateState(states, stateTooltip) {
