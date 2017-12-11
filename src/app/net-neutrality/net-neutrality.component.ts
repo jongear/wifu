@@ -156,6 +156,8 @@ export class NetNeutralityComponent implements OnInit {
                 new RepresentativeModel({ name: 'Yoho, Ted', party: 'Republican', district: '3rd', total: 4000 })
             ]
         }));
+
+
     }
 
     generateState(states, stateTooltip) {
