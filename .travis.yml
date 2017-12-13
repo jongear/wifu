@@ -12,13 +12,10 @@ notifications:
   email: true
 
 install:
-  - . $HOME/.nvm/nvm.sh
-  - nvm install stable
-  - nvm use stable
   - npm install -g @angular/cli
-  - npm install
   - npm install typescript@'>=2.4.2 <2.5.0'
   - pip install awscli
+  - npm install
 
 script:
   - ng build --prod
