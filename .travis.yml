@@ -1,8 +1,6 @@
 language: python
 python:
  - "2.7"
- node_js:
-  - "8"
 cache:
   pip: true
   directories:
@@ -14,6 +12,9 @@ notifications:
   email: true
 
 install:
+  - . $HOME/.nvm/nvm.sh
+  - nvm install stable
+  - nvm use stable
   - npm install -g @angular/cli
   - npm install
   - npm install typescript@'>=2.4.2 <2.5.0'
