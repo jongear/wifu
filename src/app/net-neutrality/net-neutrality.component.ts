@@ -157,7 +157,24 @@ export class NetNeutralityComponent implements OnInit {
             ]
         }));
 
-
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'Georgia',
+            stateCode: 'GA',
+            senators: [
+                new SenatorModel({ name: 'Perdue, David', party: 'Republican', total: 37000 })
+            ],
+            representatives: [
+                new RepresentativeModel({ name: 'Allen, Rick', party: 'Republican', district: '12th', total: 9500 }),
+                new RepresentativeModel({ name: 'Carter, Buddy', party: 'Republican', district: '1st', total: 12250 }),
+                new RepresentativeModel({ name: 'Collins, Doug', party: 'Republican', district: '9th', total: 42850 }),
+                new RepresentativeModel({ name: 'Ferguson, Anderson', party: 'Republican', district: '3rd', total: 7000 }),
+                new RepresentativeModel({ name: 'Graves, John', party: 'Republican', district: '14th', total: 34000 }),
+                new RepresentativeModel({ name: 'Hice, Jody', party: 'Republican', district: '10th', total: 6000 }),
+                new RepresentativeModel({ name: 'Loudermilk, Barry', party: 'Republican', district: '11th', total: 8000 }),
+                new RepresentativeModel({ name: 'Scott, James', party: 'Republican', district: '8th', total: 6000 }),
+                new RepresentativeModel({ name: 'Woodall, Rob', party: 'Republican', district: '7th', total: 9250 })
+            ]
+        }));
     }
 
     generateState(states, stateTooltip) {
