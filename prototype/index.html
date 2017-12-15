@@ -33,9 +33,10 @@
 
     <!-- Modal content -->
     <div id="modal-content" class="">
+      <span id="close">&times;</span>
       <div class="container">
         <h1>Ohio</h1>
-        <label for="">Senators</label>
+        <h4 for="">Senators</h4>
         <div class="modal-section">
 
           <div class="modal-item">
@@ -73,6 +74,28 @@
             <div class="row">
               <div>Party</div>
               <div>Republican</div>
+            </div>
+            <div class="row">
+              <div>Amount</div>
+              <div>$76,126</div>
+            </div>
+          </div>
+
+        </div>
+        <h4 for="">Representatives</h4>
+        <div class="modal-section">
+
+          <div class="modal-item">
+            <div class="row">
+              <h5>Mark Stand</h5>
+            </div>
+            <div class="row">
+              <div>Party</div>
+              <div>Republican</div>
+            </div>
+            <div class="row">
+              <div>District</div>
+              <div>31st</div>
             </div>
             <div class="row">
               <div>Amount</div>
@@ -424,10 +447,13 @@
     var body = document.getElementsByTagName("body");
 
     // Get the modal
-    var modal = document.getElementById('myModal');
+    var modal = document.getElementById("myModal");
+
+    // Get close
+    var close = document.getElementById("close");
 
     // Get the body
-    var body = document.getElementById('body');
+    var body = document.getElementById("body");
 
     // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
@@ -441,6 +467,9 @@
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
       if (event.target == modal) {
+        modal.style.display = "none";
+        body.style.overflow = "initial";
+      } else if (event.target == close) {
         modal.style.display = "none";
         body.style.overflow = "initial";
       }
