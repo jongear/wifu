@@ -373,6 +373,52 @@ export class NetNeutralityComponent implements OnInit {
                 new RepresentativeModel({ name: 'Palazzo, Steven', party: 'Republican', district: '4th', total: 11100 })
             ]
         }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'Montana',
+            stateCode: 'MT',
+            senators: [
+                new SenatorModel({ name: 'Daines, Steve', party: 'Republican', total: 38700 })
+            ],
+            representatives: [
+
+            ]
+        }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'Mississippi',
+            stateCode: 'MS',
+            senators: [
+                new SenatorModel({ name: 'Cochran, Thad', party: 'Republican', total: 123750 }),
+                new SenatorModel({ name: 'Wicker, Roger', party: 'Republican', total: 151800 }),
+            ],
+            representatives: [
+                new RepresentativeModel({ name: 'Harper, Gregg', party: 'Republican', district: '3rd', total: 33800 }),
+                new RepresentativeModel({ name: 'Kelly, Trent', party: 'Republican', district: '1st', total: 3300 }),
+                new RepresentativeModel({ name: 'Palazzo, Steven', party: 'Republican', district: '4th', total: 11100 })
+            ]
+        }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'North Carolina',
+            stateCode: 'NC',
+            senators: [
+                new SenatorModel({ name: 'Burr, Richard', party: 'Republican', total: 58500 }),
+                new SenatorModel({ name: 'Tillis, Thom', party: 'Republican', total: 41220 }),
+            ],
+            representatives: [
+                new RepresentativeModel({ name: 'Budd, Theodore', party: 'Republican', district: '13th', total: 10000 }),
+                new RepresentativeModel({ name: 'Foxx, Virginia', party: 'Republican', district: '5th', total: 13250 }),
+                new RepresentativeModel({ name: 'Holding, George', party: 'Republican', district: '2nd', total: 31100 }),
+                new RepresentativeModel({ name: 'Hudson, Richard', party: 'Republican', district: '8th', total: 45400 }),
+                new RepresentativeModel({ name: 'McHenry, Patrick', party: 'Republican', district: '10th', total: 51000 }),
+                new RepresentativeModel({ name: 'Meadows, Mark', party: 'Republican', district: '11th', total: 4000 }),
+                new RepresentativeModel({ name: 'Rouzer, David', party: 'Republican', district: '7th', total: 15000 }),
+                new RepresentativeModel({ name: 'Walker, Bradley', party: 'Republican', district: '6th', total: 16750 }),
+            ]
+        }));
+
+        
     }
 
     generateState(states, stateTooltip) {
