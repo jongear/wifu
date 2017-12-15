@@ -1,0 +1,68 @@
+/* Variables */
+
+@import "colors";
+.state-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.state-button {
+  width: calc(50% - 7.5px);
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  color: $ultra-violet;
+  border: 2px solid $kimberly;
+  background-color: $mischka;
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    background-color: $kimberly;
+    color: white;
+    cursor: pointer;
+  }
+  &:active {
+    background-color: $ultra-violet;
+    border-color: $ultra-violet;
+  }
+  span {
+    width: 100%;
+    span {
+      display: block;
+      text-align: center;
+    }
+    span:nth-child(1) {
+      font-weight: 700;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .state-button {
+    width: calc(33.33% - 15px);
+    margin-bottom: 30px;
+    &:nth-child(3n +1) {
+      margin-left: 0px;
+    }
+    &:nth-child(3n + 3) {
+      margin-right: 0px;
+    }
+    span {
+      >* {
+        display: inline-block;
+        width: 50%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        &:nth-child(1) {
+          text-align: left;
+          float: left;
+        }
+        &:nth-child(2) {
+          text-align: right;
+          float: right;
+        }
+      }
+    }
+  }
+}

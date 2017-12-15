@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* Variables */
+/* Violets */
+/* Reds */
+/* Grays */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed:400,700");
+/* Typography –––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #604c8d;
+}
+
+::selection {
+  color: white;
+  background-color: #604c8d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #604c8d;
+}
+
+h1.separate,
+h2.separate,
+h3.separate,
+h4.separate,
+h5.separate,
+h6.separate {
+  border-bottom: 1px solid #dfdbe8;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #A094BB;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: underline;
+  font-style: italic;
+  background-size: 0% 1.5em;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  transition: all 0.1s ease-in-out;
+  background-image: linear-gradient(to right, #604c8d 0%, #604c8d 100%);
+}
+
+a:link {
+  color: #604c8d;
+}
+
+a:visited, a:active {
+  color: #604c8d;
+}
+
+a:hover {
+  background-position: 0% 50%;
+  background-size: 100% 1.5em;
+  color: white;
+}
