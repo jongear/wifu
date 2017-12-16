@@ -1,0 +1,72 @@
+/* Variables */
+
+@import "colors";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed:400,700');
+$display-stack: 'Roboto Condensed',
+sans-serif;
+$body-stack: 'Open Sans',
+sans-serif;
+
+/* Typography –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+  font-family: $body-stack;
+  color: $ultra-violet;
+}
+
+::selection {
+  color: white;
+  background-color: $ultra-violet;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $display-stack;
+  color: $ultra-violet;
+  &.separate {
+    border-bottom: 1px solid $mischka;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: $amethyst-smoke;
+}
+
+p {
+  font-family: $body-stack;
+}
+
+a {
+  text-decoration: underline;
+  font-style: italic;
+  background-size: 0% 1.5em;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  transition: all 0.1s ease-in-out;
+  background-image: linear-gradient(to right, $ultra-violet 0%, $ultra-violet 100%);
+  &:link {
+    color: $ultra-violet;
+  }
+  &:visited,
+  &:active {
+    color: $ultra-violet;
+  }
+  &:hover {
+    background-position: 0% 50%;
+    background-size: 100% 1.5em;
+    color: white;
+  }
+}

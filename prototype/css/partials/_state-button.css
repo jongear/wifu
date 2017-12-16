@@ -1,0 +1,72 @@
+/* Variables */
+/* Violets */
+/* Reds */
+/* Grays */
+.state-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.state-button {
+  width: calc(50% - 7.5px);
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  color: #604c8d;
+  border: 2px solid #8070a4;
+  background-color: #dfdbe8;
+  transition: all 0.1s ease-in-out;
+}
+
+.state-button:hover {
+  background-color: #8070a4;
+  color: white;
+  cursor: pointer;
+}
+
+.state-button:active {
+  background-color: #604c8d;
+  border-color: #604c8d;
+}
+
+.state-button span {
+  width: 100%;
+}
+
+.state-button span span {
+  display: block;
+  text-align: center;
+}
+
+.state-button span span:nth-child(1) {
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 1000px) {
+  .state-button {
+    width: calc(33.33% - 15px);
+    margin-bottom: 30px;
+  }
+  .state-button:nth-child(3n +1) {
+    margin-left: 0px;
+  }
+  .state-button:nth-child(3n + 3) {
+    margin-right: 0px;
+  }
+  .state-button span > * {
+    display: inline-block;
+    width: 50%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .state-button span > *:nth-child(1) {
+    text-align: left;
+    float: left;
+  }
+  .state-button span > *:nth-child(2) {
+    text-align: right;
+    float: right;
+  }
+}

@@ -1,0 +1,94 @@
+@import "colors";
+.modal {
+    display: none;
+    position: fixed;
+    align-content: center;
+    z-index: 1;
+    padding-top: 15px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(96, 76, 141, 0.9);
+
+    #close {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      padding: 10px;
+
+      font-size: 4em;
+      line-height: .5em;
+      opacity: .5;
+      cursor: pointer;
+      z-index: 1;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .modal {
+        padding-top: 25%;
+    }
+}
+
+#modal-content {
+    * {
+        color: $mischka;
+    }
+    .modal-section {
+        margin-bottom: 45px;
+        .modal-item {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-bottom: 30px;
+            border: 2px solid $mischka;
+            .row {
+                &:first-child {
+                    padding-bottom: 5px;
+                    margin-bottom: 10px;
+                    border-bottom: 2px solid $amethyst-smoke;
+                }
+                h5 {
+                    margin: 0px;
+                    text-align: center;
+                }
+                div {
+                    width: calc(50%);
+                    float: left;
+                    &:not(:first-child) {
+                        font-weight: 700;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #modal-content {
+        .modal-section {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            .modal-item {
+                width: calc(33.33% - 15px);
+                margin-bottom: 30px;
+                &:nth-child(3n +1) {
+                    margin-left: 0px;
+                }
+                &:nth-child(3n + 3) {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
