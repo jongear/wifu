@@ -48,7 +48,7 @@ export class NetNeutralityComponent implements OnInit {
                 new RepresentativeModel({ name: 'Aderholt, Robert', party: 'Republican', district: '4th', total: 26500 }),
                 new RepresentativeModel({ name: 'Byrne, Bradley', party: 'Republican', district: '1st', total: 17500 }),
                 new RepresentativeModel({ name: 'Palmer, Gary', party: 'Republican', district: '6th', total: 2000 }),
-                new RepresentativeModel({ name: 'Roby, Martha', party: 'Republican', district: '2nd', total: 332000 }),
+                new RepresentativeModel({ name: 'Roby, Martha', party: 'Republican', district: '2nd', total: 33200 }),
                 new RepresentativeModel({ name: 'Rogers, Mike', party: 'Republican', district: '3rd', total: 25000 })
             ]
         }));
