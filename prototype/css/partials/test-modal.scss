@@ -15,31 +15,34 @@
     overflow: auto;
     /* Enable scroll if needed */
     background-color: rgba(96, 76, 141, 0.9);
-
+    * {
+        color: $mischka;
+    }
     #close {
-      position: fixed;
-      top: 15px;
-      right: 15px;
-      padding: 10px;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        padding: 10px;
+        font-size: 4em;
+        line-height: .5em;
+        opacity: .5;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        z-index: 1;
 
-      font-size: 4em;
-      line-height: .5em;
-      opacity: .5;
-      cursor: pointer;
-      z-index: 1;
+        &:hover {
+          transform: rotate(180deg);
+        }
     }
 }
 
 @media only screen and (min-width: 1000px) {
     .modal {
-        padding-top: 25%;
+        padding-top: 15%;
     }
 }
 
 #modal-content {
-    * {
-        color: $mischka;
-    }
     .modal-section {
         margin-bottom: 45px;
         .modal-item {

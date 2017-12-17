@@ -30,10 +30,10 @@
 
   <!-- The Modal -->
   <div id="myModal" class="modal">
-      <span id="close">&times;</span>
+    <span id="close" style="right: -100px">&times;</span>
     <!-- Modal content -->
     <div id="modal-content" class="">
-      
+
       <div class="container">
         <h1>Ohio</h1>
         <h4 for="">Senators</h4>
@@ -84,6 +84,96 @@
         </div>
         <h4 for="">Representatives</h4>
         <div class="modal-section">
+
+          <div class="modal-item">
+            <div class="row">
+              <h5>Mark Stand</h5>
+            </div>
+            <div class="row">
+              <div>Party</div>
+              <div>Republican</div>
+            </div>
+            <div class="row">
+              <div>District</div>
+              <div>31st</div>
+            </div>
+            <div class="row">
+              <div>Amount</div>
+              <div>$76,126</div>
+            </div>
+          </div>
+
+          <div class="modal-item">
+            <div class="row">
+              <h5>Mark Stand</h5>
+            </div>
+            <div class="row">
+              <div>Party</div>
+              <div>Republican</div>
+            </div>
+            <div class="row">
+              <div>District</div>
+              <div>31st</div>
+            </div>
+            <div class="row">
+              <div>Amount</div>
+              <div>$76,126</div>
+            </div>
+          </div>
+
+          <div class="modal-item">
+            <div class="row">
+              <h5>Mark Stand</h5>
+            </div>
+            <div class="row">
+              <div>Party</div>
+              <div>Republican</div>
+            </div>
+            <div class="row">
+              <div>District</div>
+              <div>31st</div>
+            </div>
+            <div class="row">
+              <div>Amount</div>
+              <div>$76,126</div>
+            </div>
+          </div>
+
+          <div class="modal-item">
+            <div class="row">
+              <h5>Mark Stand</h5>
+            </div>
+            <div class="row">
+              <div>Party</div>
+              <div>Republican</div>
+            </div>
+            <div class="row">
+              <div>District</div>
+              <div>31st</div>
+            </div>
+            <div class="row">
+              <div>Amount</div>
+              <div>$76,126</div>
+            </div>
+          </div>
+
+          <div class="modal-item">
+            <div class="row">
+              <h5>Mark Stand</h5>
+            </div>
+            <div class="row">
+              <div>Party</div>
+              <div>Republican</div>
+            </div>
+            <div class="row">
+              <div>District</div>
+              <div>31st</div>
+            </div>
+            <div class="row">
+              <div>Amount</div>
+              <div>$76,126</div>
+            </div>
+          </div>
 
           <div class="modal-item">
             <div class="row">
@@ -440,6 +530,12 @@
 
 
     </div>
+
+    <div id="nn-footer">
+      <div class="container">
+        
+      </div>
+    </div>
   </section>
   <script>
 
@@ -458,13 +554,17 @@
     // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
 
+    var addRight = function() {
+      close.style.right = "15px";
+    }
 
     // When the user clicks the button, open the modal 
     btn.onclick = function () {
       modal.style.display = "block";
       body.style.overflow = "hidden";
+      setTimeout(addRight, 50);
     }
-    // When the user clicks anywhere outside of the modal, close it
+    // When the user clicks anywhere outside of the modal or X, close the modal
     window.onclick = function (event) {
       if (event.target == modal) {
         modal.style.display = "none";
@@ -472,6 +572,7 @@
       } else if (event.target == close) {
         modal.style.display = "none";
         body.style.overflow = "initial";
+        close.style.right = "-100px";
       }
     }
   </script>

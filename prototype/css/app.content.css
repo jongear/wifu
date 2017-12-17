@@ -213,6 +213,10 @@ section article {
   background-color: rgba(96, 76, 141, 0.9);
 }
 
+.modal * {
+  color: #dfdbe8;
+}
+
 .modal #close {
   position: fixed;
   top: 15px;
@@ -222,17 +226,18 @@ section article {
   line-height: .5em;
   opacity: .5;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
   z-index: 1;
+}
+
+.modal #close:hover {
+  transform: rotate(180deg);
 }
 
 @media only screen and (min-width: 1000px) {
   .modal {
-    padding-top: 25%;
+    padding-top: 15%;
   }
-}
-
-#modal-content * {
-  color: #dfdbe8;
 }
 
 #modal-content .modal-section {
