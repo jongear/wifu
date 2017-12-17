@@ -1,0 +1,25 @@
+    /* Variables */
+
+    @import "colors";
+    #nn-footer {
+        margin-bottom: 15px;
+        padding-top: 15px;
+        border-top: 1px solid $mischka;
+        a.footer-link {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding-right: 15px;
+        }
+        span.copyright {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (min-width: 750px) {
+        #nn-footer {
+            span.copyright {
+                text-align: right;
+            }
+        }
+    }

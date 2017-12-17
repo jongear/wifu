@@ -127,6 +127,7 @@ section article {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 10em;
 }
 
 .state-button {
@@ -188,6 +189,33 @@ section article {
   .state-button span > *:nth-child(2) {
     text-align: right;
     float: right;
+  }
+}
+
+/* Variables */
+/* Violets */
+/* Reds */
+/* Grays */
+#nn-footer {
+  margin-bottom: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #dfdbe8;
+}
+
+#nn-footer a.footer-link {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding-right: 15px;
+}
+
+#nn-footer span.copyright {
+  display: block;
+  text-align: center;
+}
+
+@media only screen and (min-width: 750px) {
+  #nn-footer span.copyright {
+    text-align: right;
   }
 }
 
