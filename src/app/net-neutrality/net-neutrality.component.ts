@@ -418,7 +418,127 @@ export class NetNeutralityComponent implements OnInit {
             ]
         }));
 
-        
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'North Dakota',
+            stateCode: 'ND',
+            senators: [
+                new SenatorModel({ name: 'Hoeven, John', party: 'Republican', total: 25800 })
+            ],
+            representatives: [
+                new RepresentativeModel({ name: 'Cramer, Kevin', party: 'Republican', district: '1st', total: 71750 })
+            ]
+        }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'Nebraska',
+            stateCode: 'NE',
+            senators: [
+                new SenatorModel({ name: 'Fischer, Debra', party: 'Republican', total: 21850 }),
+                new SenatorModel({ name: 'Sasse, Benjamin', party: 'Republican', total: 31800 }),
+            ],
+            representatives: [
+                new RepresentativeModel({ name: 'Bacon, Donald', party: 'Republican', district: '2nd', total: 7000 }),
+                new RepresentativeModel({ name: 'Fortenberry, Jeff', party: 'Republican', district: '1st', total: 3500 }),
+                new RepresentativeModel({ name: 'Smith, Adrian', party: 'Republican', district: '3rd', total: 8500 })
+            ]
+        }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'New Hampshire',
+            stateCode: 'NH',
+            senators: [
+            ],
+            representatives: [
+            ]
+        }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'New Jersey',
+            stateCode: 'NJ',
+            senators: [
+            ],
+            representatives: [
+                new RepresentativeModel({ name: 'Frelinghuysen, Rodney', party: 'Republican', district: '11th', total: 55456 }),
+                new RepresentativeModel({ name: 'Lance, Leonard', party: 'Republican', district: '7th', total: 43000 }),
+                new RepresentativeModel({ name: 'LoBiondo, Frank', party: 'Republican', district: '2nd', total: 14500 }),
+                new RepresentativeModel({ name: 'MacArthur, Tom', party: 'Republican', district: '3rd', total: 19000 }),
+                new RepresentativeModel({ name: 'Smith, Christopher', party: 'Republican', district: '4th', total: 6000 })
+            ]
+        }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'New Mexico',
+            stateCode: 'NM',
+            senators: [
+            ],
+            representatives: [
+                new RepresentativeModel({ name: 'Pearce, Steve', party: 'Republican', district: '2nd', total: 20400 })
+            ]
+        }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'Nevada',
+            stateCode: 'NV',
+            senators: [
+                new SenatorModel({ name: 'Heller, Dean', party: 'Republican', total: 78950 })
+            ],
+            representatives: [
+                new RepresentativeModel({ name: 'Amodei, Mark', party: 'Republican', district: '2nd', total: 22000 })
+            ]
+        }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'New York',
+            stateCode: 'NY',
+            senators: [
+                new SenatorModel({ name: 'Cornyn, John', party: 'Republican', total: 148800 })
+            ],
+            representatives: [
+                new RepresentativeModel({ name: 'Collins, Chris', party: 'Republican', district: '27th', total: 57500 }),
+                new RepresentativeModel({ name: 'Donovan, Daniel', party: 'Republican', district: '11th', total: 16000 }),
+                new RepresentativeModel({ name: 'Katko, John', party: 'Republican', district: '24th', total: 32250 }),
+                new RepresentativeModel({ name: 'King, Peter', party: 'Republican', district: '2nd', total: 9000 }),
+                new RepresentativeModel({ name: 'Marchant, Kenny', party: 'Republican', district: '24th', total: 12000 }),
+                new RepresentativeModel({ name: 'Reed, Thomas', party: 'Republican', district: '23rd', total: 31500 }),
+                new RepresentativeModel({ name: 'Tenney, Claudia', party: 'Republican', district: '22nd', total: 8500 }),
+            ]
+        }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'Ohio',
+            stateCode: 'OH',
+            senators: [
+                new SenatorModel({ name: 'Portman, Rob', party: 'Republican', total: 89350 })
+            ],
+            representatives: [
+                new RepresentativeModel({ name: 'Chabot, Steven', party: 'Republican', district: '1st', total: 25500 }),
+                new RepresentativeModel({ name: 'Gibbs, Robert', party: 'Republican', district: '7th', total: 8000 }),
+                new RepresentativeModel({ name: 'Johnson, Bill', party: 'Republican', district: '6th', total: 56500 }),
+                new RepresentativeModel({ name: 'Jordan, James', party: 'Republican', district: '4th', total: 24750 }),
+                new RepresentativeModel({ name: 'Joyce, David', party: 'Republican', district: '14th', total: 16500 }),
+                new RepresentativeModel({ name: 'Latta, Bob', party: 'Republican', district: '5th', total: 91000 }),
+                new RepresentativeModel({ name: 'Renacci, Jim', party: 'Republican', district: '16th', total: 48000 }),
+                new RepresentativeModel({ name: 'Stivers, Steve', party: 'Republican', district: '15th', total: 27000 }),
+                new RepresentativeModel({ name: 'Tiberi, Patrick', party: 'Republican', district: '12th', total: 53250 }),
+                new RepresentativeModel({ name: 'Turner, Mike', party: 'Republican', district: '10th', total: 6000 }),
+                new RepresentativeModel({ name: 'Wenstrup, Brad', party: 'Republican', district: '2nd', total: 9400 }),
+            ]
+        }));
+
+        this.generateState(states, new StateTooltipModel({
+            stateName: 'Oklahoma',
+            stateCode: 'OK',
+            senators: [
+                new SenatorModel({ name: 'Inhofe, Jim', party: 'Republican', total: 38000 }),
+                new SenatorModel({ name: 'Lankford, James', party: 'Republican', total: 21000 })
+            ],
+            representatives: [
+                new RepresentativeModel({ name: 'Bridenstine, Jim', party: 'Republican', district: '1st', total: 1000 }),
+                new RepresentativeModel({ name: 'Cole, Tom', party: 'Republican', district: '4th', total: 14000 }),
+                new RepresentativeModel({ name: 'Lucas, Frank', party: 'Republican', district: '3rd', total: 14500 }),
+                new RepresentativeModel({ name: 'Russell, Steven', party: 'Republican', district: '5th', total: 16450 })
+            ]
+        }));
     }
 
     generateState(states, stateTooltip) {
